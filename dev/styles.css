@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-destaque {
+    background-color: #555;
+    color: white;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-size: 2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.titulo-destaque:hover {
+    background-color: #333;
+    transform: scale(1.02);
+}
+
+.area-artigos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.artigo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.artigo {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.artigo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.esquerda {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.animal-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.direita {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.direita p {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border-radius: 00px;
+    font-size: 1rem;
+}
