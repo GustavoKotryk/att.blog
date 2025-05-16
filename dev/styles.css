@@ -5,35 +5,54 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-repeat: repeat;
+    background-color: #f5f5f5; 
 }
+
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 header {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 100px 20px;
     text-align: center;
+    background: url('https://images.unsplash.com/photo-1428542244207-0aaec316e609?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    overflow: hidden;
     margin-bottom: 40px;
+    
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .titulo-destaque {
-    background-color: #555;
+    position: relative;
+    font-size: 3.8rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.titulo-destaque {
     color: white;
+    text-shadow:-1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    2px  2px 0 #000;
     display: inline-block;
     padding: 20px 40px;
     border-radius: 20px;
-    font-size: 2rem;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.titulo-destaque:hover {
-    background-color: #333;
-    transform: scale(1.02);
+    font-size: 3rem;
 }
 
 .area-artigos {
@@ -54,6 +73,7 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+    align-items: center;
 }
 
 .artigo:hover {
@@ -63,7 +83,7 @@ header {
 
 .esquerda {
     flex: 1;
-    padding: 20px;
+    padding: 21px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,6 +107,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    font-size: 20px;
 }
 
 .direita p {
